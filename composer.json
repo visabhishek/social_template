@@ -6,9 +6,9 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "goalgorilla/open_social": "~12.4.0",
-        "php": "^8.0",
-        "monolog/monolog": "^2.3.5"
+        "goalgorilla/open_social": "~13.0.0-alpha23",
+        "php": "^8.1",
+        "monolog/monolog": "^3.9"
     },
     "repositories": [
         {
@@ -23,7 +23,7 @@
     "extra": {
         "drupal-scaffold": {
             "locations": {
-                "web-root": "html/"
+                "web-root": "web/"
             }
         },
         "installer-types": [
@@ -31,22 +31,22 @@
             "npm-asset"
         ],
         "installer-paths": {
-            "html/core": [
+            "web/core": [
                 "drupal/core"
             ],
-            "html/modules/contrib/{$name}": [
+            "web/modules/contrib/{$name}": [
                 "type:drupal-module"
             ],
-            "html/profiles/contrib/social": [
+            "web/profiles/contrib/social": [
                 "goalgorilla/open_social"
             ],
-            "html/profiles/contrib/{$name}": [
+            "web/profiles/contrib/{$name}": [
                 "type:drupal-profile"
             ],
-            "html/themes/contrib/{$name}": [
+            "web/themes/contrib/{$name}": [
                 "type:drupal-theme"
             ],
-            "html/libraries/{$name}": [
+            "web/libraries/{$name}": [
                 "type:drupal-library",
                 "type:bower-asset",
                 "type:npm-asset"
