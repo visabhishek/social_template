@@ -8,7 +8,8 @@
     "require": {
         "goalgorilla/open_social": "~13.0.0-alpha23",
         "php": "^8.1",
-        "monolog/monolog": "^3.9"
+        "monolog/monolog": "^3.9",
+        "drupal/masquerade": "^2.0"
     },
     "repositories": [
         {
